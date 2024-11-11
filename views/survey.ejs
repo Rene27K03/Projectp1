@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracking Survey</title>
+</head>
+<body>
+    <header>
+        <h1>How Many Hours of Sleep Do You Get?</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/negative-impacts">Negative Health Impacts</a> |
+        <a href="/benefits">Benefits of Sleeping</a> |
+        <a href="/survey">Survey</a>
+    </nav>
+    <main>
+        <form action="/submit-survey" method="POST">
+            <label for="hours">Enter hours of sleep:</label>
+            <input type="number" id="hours" name="hours" min="0" max="24" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <%- include('footer') %>
+
+</body>
+</html>
