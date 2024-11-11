@@ -1,10 +1,25 @@
 const express = require('express');
 const router = express.Router();  // Initialize the router
-const Survey = require('../models/survey');  // Make sure the file name is correctly capitalized
+const Survey = require('../models/survey');  // Ensure this is properly capitalized
+
+// Route to display the home page
+router.get('/', (req, res) => {
+  res.render('home');  // Ensure you have a 'home.ejs' file in your 'views' folder
+});
+
+// Route to display the Negative Health Impacts page
+router.get('/negative-impacts', (req, res) => {
+  res.render('negative-impacts');  // Ensure you have a 'negative-impacts.ejs' file
+});
+
+// Route to display the Benefits of Sleeping page
+router.get('/benefits', (req, res) => {
+  res.render('benefits');  // Ensure you have a 'benefits.ejs' file
+});
 
 // Route to display the survey form
 router.get('/survey', (req, res) => {
-  res.render('survey');  // Render your survey form
+  res.render('survey');  // Ensure you have a 'survey.ejs' file for the survey form
 });
 
 // Route to handle the form submission

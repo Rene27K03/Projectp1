@@ -27,14 +27,15 @@ mongoose.connect('mongodb://localhost:27017/surveyDB', {
 });
 
 // Define port
-const port = process.env.PORT || 3000; // If PORT is set in the environment, use it; otherwise, use 3000
+const port = process.env.PORT || 3000;
 
-// Routes
+// Import the routes
 const indexRouter = require('./routes/index');
-app.use('/', indexRouter);
+app.use('/', indexRouter);  // Use the routes from index.js
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
 module.exports = app;
+
