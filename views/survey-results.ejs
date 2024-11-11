@@ -1,0 +1,19 @@
+<!-- views/survey-results.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Results</title>
+</head>
+<body>
+  <h1>Survey Results</h1>
+  <ul>
+    <!-- Loop through the surveys array and display each response -->
+    <% surveys.forEach(survey => { %>
+      <li><%= survey.hours %> hours of sleep</li>
+    <% }); %>
+  </ul>
+  <a href="/survey">Go back to the survey</a>
+</body>
+</html>

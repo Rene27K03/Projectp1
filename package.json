@@ -1,4 +1,3 @@
-
 {
   "name": "sleep-tracking-survey-site",
   "version": "1.0.0",
@@ -8,10 +7,13 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "ejs": "^3.1.9",
-    "mongoose": "^7.0.4"
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^7.8.2"
   },
   "author": "Kageepan Satheeskumar, Jibz Pinli, Gabriel Kam",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": []
 }
